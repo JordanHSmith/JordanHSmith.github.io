@@ -1,0 +1,301 @@
+body{
+    margin: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} 
+
+#background{
+    margin: 0;
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgb(199,217,240),rgb(45, 103, 168));
+}
+
+#top-bar{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.top-bar-button {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+    color:blue;
+    cursor:pointer;
+}
+
+/*
+ChatGPT was very helpful in explaining different ways content might be placed side-by-side
+*/
+.side-by-side-container{ 
+    display: flex;      
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+
+#title-container{
+    width: 40%;
+    height: 0%;
+    padding: 0px;
+    border: 20px solid rgb(15, 16, 106);
+    margin-top: 5%;
+    padding: 2%;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    font-size: 2vw;
+    width: 100%;
+    height: 5%;
+    padding: 0px;
+    margin: 0px;
+    line-height: 0;
+}
+
+.opening-photo-container{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    height: auto;
+    padding: 0px;
+    margin-top: 10px;
+    padding: 2%;
+}
+
+.photo img{
+    display: flex;
+    justify-content: center;
+    width: 30vw;
+    height: auto;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400&display=swap');
+#skills-title{
+    width: 100%;
+    font-size: 3vw;
+    font-family: 'Roboto Mono', monospace;
+    font-style: italic;
+    text-align: center;
+    background:rgb(228, 224, 241);
+    color:rgb(14, 45, 158);
+}
+
+#list-container{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+
+.list{
+    width: 45%;
+    padding: 10px;
+    border: 5px solid rgb(15, 16, 106);
+}
+
+#languages-subtitle{
+    text-align: center;
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: disc;
+}
+
+.languages-list li{
+    list-style-type: none;
+    padding-bottom: 15px;
+    font-size: 3vw;
+    margin-left: 3%;
+    background-image: url("images/test_dog.jpeg");
+    background-repeat: no-repeat;
+    background-position: 0 -2px;
+    background-size: 25px 25px;
+    padding-left: 30px;
+    margin-bottom: 10px;
+    margin: 5px 0;
+}
+
+.languages-list li:nth-child(1){
+    background-image: url("images/python.png");
+}
+
+.languages-list li:nth-child(2){
+    background-image: url("images/java.png");
+}
+
+.languages-list li:nth-child(3){
+    background-image: url("images/c.png");
+}
+.languages-list li:nth-child(4){
+    background-image: url("images/r.png");
+}
+
+.languages-list li:nth-child(5){
+    background-image: url("images/html.png");
+}
+
+.languages-list li:nth-child(6){
+    background-image: url("images/css.png");
+}
+
+.languages-list li:nth-child(7){
+    background-image: url("images/js.png");
+}
+
+.languages-list li:nth-child(8){
+    background-image: url("images/vhdl.png");
+}
+
+.languages-list li:nth-child(9){
+    background-image: url("images/processing.png");
+}
+
+#courses-subtitle{
+    text-align: center;
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 10px;
+
+}
+
+.courses-list{
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.courses-list li{
+    justify-content: left;
+    padding-bottom: 15px;
+    font-size: 3vw;
+    margin-left: -200px;
+    margin-bottom: 10px;
+    margin: 5px 0;
+}
+
+.courses-list-easy li::marker{
+    color:green;
+}
+
+.courses-list-medium li::marker{
+    color:yellow;
+}
+
+.courses-list-hard li::marker{
+    color:red;
+}
+
+#work-experience-title{
+    width: 100%;
+    font-size: 3vw;
+    font-family: 'Times New Roman';
+    text-align: center;
+    background:rgb(228, 224, 241);
+    color:rgb(4, 58, 145);
+}
+
+#work-experience-container{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 0px;
+}
+
+.work-experience-list{
+    padding-bottom: 15px;
+    font-size: 3vw;
+    margin-left: 3%;
+    margin: 0px 0;
+    margin-top: 0px;
+    margin-right: 15px;
+    list-style-type: none;
+}
+
+#projects-title{
+    text-align: center;
+    background:rgb(228, 224, 241);
+    font-size: 2.5vw;
+}
+
+#projects-photo-container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    margin-left: -2%;
+}
+
+#projects-photo img{
+    display: flex;
+    justify-content: center;
+    width: 50vw;
+    height: auto;
+}
+
+#about-me-title{
+    width: 100%;
+    font-size: 3vw;
+    text-align: center;
+    font-family: sans-serif;
+    background:rgb(228, 224, 241);
+    color:rgb(6, 176, 168);
+}
+
+#about-me-container{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+
+#about-me-photo-container{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    height: auto;
+    margin-left: -2%;
+    margin-top: -30px;
+}
+
+#about-me-body{
+    width: 45%;
+    height: 0%;
+    padding: 10px;
+    border: 10px solid rgb(15, 16, 106);
+    font-size: 3vw;
+}
+
+#contact-title{
+    width: 100%;
+    font-size: 3vw;
+    text-align: center;
+    font-family: Helvetica;
+    background:rgb(228, 224, 241);
+    color:rgb(124, 37, 237);
+}
+
+#contact-container{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 0px;
+    display: flex;
+}
+
+.contact-body{
+    padding-bottom: 15px;
+    font-size: 3.2vw;
+    margin-left: 3%;
+    margin: 0px 0;
+    margin-top: 0px;
+}
+
+.contact-body li{
+    list-style-type: none;
+}
